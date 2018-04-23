@@ -7,8 +7,11 @@
     Title: <%= f.text_field :name %><br>
  
   <%= f.fields_for :ingredients do |ingr| %>
-    <%= addr.label :Ingredient_1%>
-    <%= addr.text_field :Ingredient_1 %><br>
+    <%= ingr.label :name%>
+    <%= ingr.text_field :name %><br>
+
+    <%= ingr.label :name%>
+    <%= ingr.text_field :name %><br>
   <% end %>
  
   <%= f.submit %>
